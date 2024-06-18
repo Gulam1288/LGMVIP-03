@@ -6,7 +6,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -33,7 +33,6 @@ h1 {
 
 .form-container, .card-container {
     padding: 20px;
-    border-radius: 10px;
     margin: 10px;
     margin-top: 40px;
     flex: 1;
@@ -44,15 +43,9 @@ h1 {
     padding: 20px;
 }
 
-.separator {
-    display: none;
-    border-left: 2px solid #ccc;
-    height: auto;
-}
-
-@media screen and (min-width: 900px) {
-    .separator {
-        display: block;
+@media screen and (min-width: 725px) {
+    .card-container {
+        border-left: 2px solid #ccc;
     }
 }
 
