@@ -7,7 +7,6 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     const imageLink = document.getElementById('imageLink').value;
     const gender = document.querySelector('input[name="gender"]:checked').value;
     const skills = Array.from(document.querySelectorAll('input[name="skills"]:checked')).map(el => el.value).join(', ');
-
     const studentsTableBody = document.getElementById('studentsTableBody');
 
     const row = document.createElement('tr');
